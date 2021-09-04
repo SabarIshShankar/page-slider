@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "expo-constants": "~11.0.1",
+    "react-native-paper": "3.6.0",
+    "react-native-track-player": "*",
+    "react-native-track-player/lib/eventTypes": "*"
+  }
+}
