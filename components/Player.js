@@ -6,6 +6,7 @@ import {PLAYBACK_TRACK_CHANGED} from 'react-native-track-player/lib/eventTypes';
 import songs from './data';
 import Controller from './Controller';
 import SliderComp from './SliderComp';
+
 const {width, height} = Dimensions.get('window');
 
 const TRACK_PLAYER_CONTROLS_OPTS = {
@@ -53,8 +54,8 @@ export default function Player() {
       TrackPlayer.play();
       isPlayerReady.current = true;
 
-      await TrackPlayer.updateOptions(TRACK_PLAYER_CONTROL_OPTS);
-      TrackPlayer.addEventListener(PLAYBACK_TRACK_CHANGE, async e => {
+      await TrackPlayer.updateOptions(TRACK_PLAYER_CONTROLS_OPTS);
+      TrackPlayer.addEventListener(PLAYBACK_TRACK_CHANGED, async e => {
         console.log('song ended', e);
 
         const trackId = (await TrackPlayer.getCurrentTrack()) - 1;
