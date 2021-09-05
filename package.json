@@ -3,6 +3,8 @@
     "expo-constants": "~11.0.1",
     "react-native-paper": "3.6.0",
     "react-native-track-player": "*",
-    "react-native-track-player/lib/eventTypes": "*"
+    "react-native-track-player/lib/eventTypes": "*",
+    "react-native-vector-icons/MaterialIcons": "*",
+    "react-native-vector-icons": "8.1.0"
   }
 }
